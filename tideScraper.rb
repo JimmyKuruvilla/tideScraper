@@ -33,7 +33,7 @@ class TideScraper
 	end
 
 	def writeFile
-		f = File.open("#{@station}.#{begin_date}.#{end_date}.csv", "w")
+		f = File.open("#{@station}.#{begin_date}-#{end_date}.csv", "w")
 		f.write(@response)
 		f.close
 	end
